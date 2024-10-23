@@ -1,33 +1,65 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
+/* GetUserDetails.css */
+.get-user-details-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 8px;
 }
 
-h2 {
-    color: #333;
+.get-user-details-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.get-user-details-form input,
+.get-user-details-form select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.get-user-details-form button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.get-user-details-form button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
+input,
+select,
+button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
+    background-color: #007bff;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -35,13 +67,25 @@ button:hover {
     background-color: #0056b3;
 }
 
-#diet-list {
-    list-style-type: none;
-    padding: 0;
+.response {
+    margin-top: 20px;
 }
 
-#diet-list li {
-    background-color: #f4f4f4;
-    margin: 5px 0;
+.response h2 {
+    margin-bottom: 10px;
+}
+
+.response p {
+    color: green;
+}
+
+.api-response {
+    margin-top: 20px;
+}
+
+.api-response pre {
+    background-color: #f0f0f0;
     padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
 }
