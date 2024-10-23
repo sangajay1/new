@@ -1,4 +1,14 @@
 /* GetUserDetails.css */
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.logo {
+    max-width: 100px; /* Adjust the size as needed */
+    height: auto;
+}
+
 .get-user-details-form {
     display: flex;
     flex-direction: column;
